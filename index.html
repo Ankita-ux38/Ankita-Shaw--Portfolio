@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Name - Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      color: #e2e8f0;
+      line-height: 1.6;
+      overflow-x: hidden;
+      background: linear-gradient(-45deg, #0f172a, #020617, #1e293b, #020617);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Typing effect */
+    .typing {
+      width: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid #ff9900;
+      animation: typing 3s steps(20) forwards, blink 0.7s infinite;
+      font-size: 2.5rem;
+      color: #ff9900;
+    }
+
+    @keyframes typing {
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    header p {
+      margin-top: 15px;
+      color: #94a3b8;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      margin: 40px 0;
+      padding: 25px;
+      background: rgba(30, 41, 59, 0.6);
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      animation: fadeIn 1.2s ease-in;
+      transition: 0.4s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255,153,0,0.2);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #ff9900;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background: #ff9900;
+      transition: 0.4s;
+    }
+
+    section:hover h2::after {
+      width: 100%;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin: 10px 0;
+      padding: 12px;
+      background: rgba(51, 65, 85, 0.7);
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    li:hover {
+      transform: translateX(10px);
+      background: #475569;
+    }
+
+    .project {
+      margin-bottom: 15px;
+      padding: 15px;
+      background: rgba(51, 65, 85, 0.7);
+      border-radius: 10px;
+      transition: 0.4s;
+    }
+
+    .project:hover {
+      transform: scale(1.04);
+      box-shadow: 0 0 20px rgba(255,153,0,0.4);
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #ff9900;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #94a3b8;
+      animation: fadeIn 2s ease-in;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <header>
+    <h1 class="typing">Your Name</h1>
+    <p>Aspiring Cloud Engineer | AWS Enthusiast</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a student passionate about cloud computing and AWS. I enjoy building
+      scalable systems and continuously improving my technical skills.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>AWS (EC2, S3, IAM, Lambda)</li>
+      <li>Python / C++</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Static Website on S3</h3>
+      <p>Hosted a responsive website using AWS S3 with public access configuration.</p>
+    </div>
+
+    <div class="project">
+      <h3>EC2 Web Server</h3>
+      <p>Deployed a web server on EC2 and configured security groups.</p>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+    <p>GitHub: <a href="#">github.com/yourname</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
