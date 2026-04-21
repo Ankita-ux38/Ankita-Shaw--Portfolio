@@ -2,6 +2,7 @@
 Personal portfolio showcasing my AWS cloud projects, technical skills, and hands-on experience in building scalable solutions.
 ## Skills
 - AWS (EC2, S3, IAM, Lambda)
+- Data Analytics(Excel,SQL,NUMPY,PANDAS,MATPLOTLIB)
 - Python / C++
 - Git & GitHub
 
