@@ -19,6 +19,7 @@ Personal portfolio showcasing my AWS cloud projects, technical skills, and hands
 ## Live Portfolio
 🔗 [Click here to view my portfolio](https://Ankita-ux38.github.io//quiz-app)
 🔗 [Click here to view my portfolio](https://Ankita-ux38.github.io/The-Vibin-Squad)
+This Portfolio showcases my AWS projects and hands-on cloud experience.
 
 ## Contact
 - Email: ankitashaw858@gmail.com
