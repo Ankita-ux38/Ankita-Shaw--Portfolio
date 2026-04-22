@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Name | Cloud Portfolio</title>
+  <title>Ankita Shaw | Cloud Portfolio</title>
 
   <style>
     * {
@@ -16,7 +16,6 @@
       color: #e2e8f0;
     }
 
-    /* NAVBAR */
     nav {
       display: flex;
       justify-content: space-between;
@@ -25,7 +24,6 @@
       backdrop-filter: blur(10px);
       position: sticky;
       top: 0;
-      z-index: 100;
     }
 
     nav h2 {
@@ -43,7 +41,6 @@
       color: #ff9900;
     }
 
-    /* HERO */
     .hero {
       text-align: center;
       padding: 100px 20px;
@@ -55,12 +52,6 @@
       background: linear-gradient(90deg, #ff9900, #38bdf8);
       -webkit-background-clip: text;
       color: transparent;
-      animation: glow 2s infinite alternate;
-    }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 10px rgba(255,153,0,0.3); }
-      to { text-shadow: 0 0 25px rgba(56,189,248,0.5); }
     }
 
     .hero p {
@@ -85,26 +76,6 @@
       background: #ffa733;
     }
 
-    /* FLOATING EFFECT */
-    .hero::after {
-      content: "";
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      background: #ff9900;
-      filter: blur(120px);
-      top: 20%;
-      left: 10%;
-      opacity: 0.2;
-      animation: float 6s infinite alternate;
-    }
-
-    @keyframes float {
-      from { transform: translateY(0); }
-      to { transform: translateY(40px); }
-    }
-
-    /* SECTIONS */
     .section {
       max-width: 1000px;
       margin: auto;
@@ -116,29 +87,6 @@
       margin-bottom: 20px;
     }
 
-    /* GRID */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    /* CARDS */
-    .card {
-      background: #0f172a;
-      padding: 20px;
-      border-radius: 10px;
-      transition: 0.3s;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 0 25px rgba(255,153,0,0.2);
-    }
-
-    /* SKILL BARS */
     .skill-bar {
       margin: 10px 0;
     }
@@ -166,14 +114,13 @@
       from { width: 0; }
     }
 
-    /* PROJECT TAGS */
-    .tag {
-      display: inline-block;
-      background: #1e293b;
-      padding: 4px 8px;
-      border-radius: 5px;
-      margin-top: 10px;
-      font-size: 0.8rem;
+    .projects-placeholder {
+      background: #0f172a;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      color: #94a3b8;
+      border: 1px dashed #334155;
     }
 
     a {
@@ -185,7 +132,6 @@
       color: #ff9900;
     }
 
-    /* FOOTER */
     footer {
       text-align: center;
       padding: 30px;
@@ -199,7 +145,7 @@
 <body>
 
 <nav>
-  <h2>Your Name</h2>
+  <h2>Ankita Shaw</h2>
   <div>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
@@ -210,16 +156,22 @@
 
 <div class="hero">
   <h1>Aspiring Cloud Engineer</h1>
-  <p>I build scalable cloud solutions using AWS and modern technologies.</p>
+  <p>I am building my journey in cloud computing with a focus on AWS and real-world deployment skills.</p>
   <a href="#projects" class="btn">View Projects</a>
-  <a href="#" class="btn">Download Resume</a>
 </div>
 
 <div class="section" id="about">
   <h2>About Me</h2>
   <p>
-    I am a 2nd year student focused on cloud computing and AWS.
-    I enjoy deploying real-world applications and learning system design.
+    I am a 2nd year student with a strong interest in cloud computing and modern technologies.
+    I am currently focused on learning and working with AWS services such as EC2, S3, and IAM,
+    and understanding how scalable systems are designed and deployed.
+  </p>
+  <br>
+  <p>
+    I enjoy exploring how real-world applications run in the cloud and continuously work on improving
+    my technical skills through hands-on practice. I am actively seeking opportunities where I can
+    apply my knowledge, learn from experienced developers, and grow as a cloud engineer.
   </p>
 </div>
 
@@ -228,17 +180,17 @@
 
   <div class="skill-bar">
     <span>AWS</span>
-    <div class="bar"><div class="progress" style="width:70%"></div></div>
-  </div>
-
-  <div class="skill-bar">
-    <span>Python</span>
     <div class="bar"><div class="progress" style="width:65%"></div></div>
   </div>
 
   <div class="skill-bar">
+    <span>Python</span>
+    <div class="bar"><div class="progress" style="width:60%"></div></div>
+  </div>
+
+  <div class="skill-bar">
     <span>Git & GitHub</span>
-    <div class="bar"><div class="progress" style="width:75%"></div></div>
+    <div class="bar"><div class="progress" style="width:70%"></div></div>
   </div>
 
 </div>
@@ -246,46 +198,23 @@
 <div class="section" id="projects">
   <h2>Projects</h2>
 
-  <div class="grid">
-
-    <div class="card">
-      <h3>Static Website on S3</h3>
-      <p>Hosted a portfolio website using AWS S3 static hosting.</p>
-      <span class="tag">AWS</span>
-      <span class="tag">S3</span>
-      <br><br>
-      <a href="#">View Project</a>
-    </div>
-
-    <div class="card">
-      <h3>EC2 Web Server</h3>
-      <p>Deployed and configured a web server on AWS EC2.</p>
-      <span class="tag">AWS</span>
-      <span class="tag">EC2</span>
-      <br><br>
-      <a href="#">View Project</a>
-    </div>
-
-    <div class="card">
-      <h3>Upcoming: Serverless App</h3>
-      <p>Building a serverless application using AWS Lambda.</p>
-      <span class="tag">Lambda</span>
-      <span class="tag">API Gateway</span>
-    </div>
-
+  <div class="projects-placeholder">
+    <p>Projects will be added soon.</p>
+    <p>Currently working on AWS-based applications and deployments.</p>
   </div>
 
 </div>
 
 <div class="section" id="contact">
   <h2>Contact</h2>
-  <p>Email: your@email.com</p>
-  <p>GitHub: https://github.com/yourname</p>
+  <p>Email: ankitashaw858@gmail.com</p>
+  <p>GitHub: <a href="https://github.com/Ankita-ux38">github.com/Ankita-ux38</a></p>
 </div>
 
 <footer>
-  <p>© 2026 Your Name</p>
+  <p>© 2026 Ankita Shaw</p>
 </footer>
 
 </body>
 </html>
+     
